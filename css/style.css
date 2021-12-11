@@ -6,8 +6,11 @@
 
 :root {
     --bg-color-main: #202123;
+    --bg-color-dark: #181618;
     --font-color-main: #bdc1c6;
     --link-color-main: #0969da;
+    --color-border-button: #3c4044;
+    --border-radius: 0.5rem;
 }
 
 body {
@@ -15,4 +18,34 @@ body {
     font-size: 16px;
     background-color: var(--bg-color-main);
     color: var(--font-color-main);
+}
+
+section.buttons {
+    /* outline: 1px dashed red; */
+    min-height: 90vh;
+    max-height: 100vh;
+    position: relative;
+}
+
+section.buttons div.buttons-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* outline: 2px dashed var(--color-border-button); */
+    transform: translate(-50%, -50%);
+}
+
+section.buttons .buttons-wrapper > .btn {
+    margin: 2rem;
+    background: none;
+    /* border: none; */
+    color: var(--font-color-main);
+    /* outline: none; */
+    border: 2px solid var(--color-border-button);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    background-color: #303135;
+}
+section.buttons .buttons-wrapper > .btn:hover {
+    background-color: #2b2c2f;
 }
