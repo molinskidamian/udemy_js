@@ -23,3 +23,15 @@ const add = (a = 0, b = 0) => {
 };
 
 add(2, 2);
+
+// Exercise 2
+
+let celsius, temp;
+
+const fahrenheit = (tempValue) => {
+    celsius = tempValue;
+    temp = celsius * 1.8 + 32;
+    return console.log(`${celsius} stopni celsiusa jest to: ${temp} stopni fahrenheita`);
+};
+
+fahrenheit(20);
