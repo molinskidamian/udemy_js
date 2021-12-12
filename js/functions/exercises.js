@@ -35,3 +35,26 @@ const fahrenheit = (tempValue) => {
 };
 
 fahrenheit(20);
+
+// Exercise 3
+
+const num = 10;
+const numbers = [];
+
+for (let i = 0; i < num; i++) {
+    numbers.push(i);
+}
+
+console.log(numbers);
+
+const test = (num) => {
+    if (num % 3 || num == 0) {
+        return console.log(`Liczba ${num} nie jest podzielna przez 3 lub jest zerem`);
+    } else {
+        return console.log(`Liczba ${num} jest podzielna przez 3`);
+    }
+};
+
+// test(5);
+
+numbers.forEach(test);
