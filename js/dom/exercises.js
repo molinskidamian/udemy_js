@@ -17,3 +17,36 @@
 // last.style.fontSize = "48px";
 
 // exercise 2
+const square = document.querySelector(".square");
+const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
+
+const hello = () => {
+    console.log("Cześć!");
+};
+
+const redBackground = () => {
+    square.style.background = "tomato";
+};
+
+const blueBackground = () => {
+    square.style.background = "royalblue";
+};
+
+btn1.addEventListener("dblclick", hello);
+
+btn2.addEventListener("click", () => {
+    const p1 = document.querySelector(".p1");
+    const p2 = document.querySelector(".p2");
+
+    p1.classList.toggle("show");
+
+    if (p1.classList.contains("show")) {
+        p2.classList.remove("show");
+    } else {
+        p2.classList.add("show");
+    }
+});
+
+square.addEventListener("mouseover", redBackground);
+square.addEventListener("mouseleave", blueBackground);
